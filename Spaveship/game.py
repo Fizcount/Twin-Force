@@ -474,6 +474,10 @@ def main():
     boms.clear() # Clear any existing bom
     boss = None
 
+    # Set the position of the spaceships to the center of the screen
+    spaceship_rect1.center = (WIDTH // 2 - 25, HEIGHT // 2)  # Set the first spaceship position
+    spaceship_rect2.center = (WIDTH // 2 + 25, HEIGHT // 2)  # Set the second spaceship position
+
     if time_limit_enabled:
         time_limit = 21  # 3 menit dalam detik
         start_time = time.time()  # Waktu mulai permainan
